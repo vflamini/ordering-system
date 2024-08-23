@@ -1,15 +1,14 @@
 <script>
   import { onMount } from 'svelte';
-  import { getOpenOrders, receiveOrders } from '$lib/api';
 
   let openOrders = [];
   let selectedOrders = [];
   let dateReceived = new Date().toISOString().split('T')[0];
   let signature = '';
 
-  onMount(async () => {
-    openOrders = await getOpenOrders();
-  });
+  // onMount(async () => {
+  //   openOrders = await getOpenOrders();
+  // });
 
   async function submitReceivedOrders() {
     await receiveOrders(selectedOrders, dateReceived, signature);

@@ -64,7 +64,7 @@
   }
 
   nav li:hover {
-    background-color: rgb(244, 244, 255);
+    background-color: rgb(195, 195, 255);
   }
 
   .sidebar {
@@ -83,6 +83,11 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+  }
+  
+  main {
+    height: 100%;
+    width: 100%;
   }
 
 </style>
